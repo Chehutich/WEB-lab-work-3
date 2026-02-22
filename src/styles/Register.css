@@ -1,0 +1,138 @@
+.register-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.register-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+}
+
+.dark .register-card {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+.register-title {
+    font-size: 1.875rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.register-subtitle {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.dark .register-subtitle {
+    color: #9ca3af;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.dark .form-label {
+    color: #d1d5db;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #d1d5db;
+    background: transparent;
+    transition: all 0.2s;
+}
+
+.dark .form-input {
+    border-color: #4b5563;
+    color: white;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-error {
+    color: #ef4444;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s;
+}
+
+.dark .radio-label {
+    border-color: #374151;
+}
+
+.radio-label:hover {
+    background: #f9fafb;
+}
+
+.dark .radio-label:hover {
+    background: #374151;
+}
+
+.radio-input {
+    width: 1.125rem;
+    height: 1.125rem;
+    accent-color: #3b82f6;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #3b82f6;
+    color: white;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.submit-btn:not(:disabled):hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}

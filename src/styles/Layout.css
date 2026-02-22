@@ -1,0 +1,95 @@
+.layout {
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.layout.dark {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+.layout.dark h1,
+.layout.dark h2,
+.layout.dark h3 {
+    color: #f9fafb;
+}
+
+.layout.light {
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+.header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.dark .header {
+    background: rgba(17, 24, 39, 0.8);
+    border-color: #374151;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #3b82f6;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    background: transparent;
+    cursor: pointer;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.dark .theme-toggle {
+    border-color: #374151;
+    color: #d1d5db;
+}
+
+.theme-toggle:hover {
+    background: #f3f4f6;
+    color: #3b82f6;
+}
+
+.dark .theme-toggle:hover {
+    background: #374151;
+    color: #60a5fa;
+}
+
+.main-content {
+    min-height: calc(100vh - 4rem);
+}
